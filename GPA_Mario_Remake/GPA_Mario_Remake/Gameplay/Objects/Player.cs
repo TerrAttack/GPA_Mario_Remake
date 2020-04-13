@@ -8,12 +8,11 @@ namespace GPA_Mario_Remake.Gameplay.Objects
 	class Player : AnimatedGameObject
 	{
 		int playerSpeed = 256;
-		bool airborne;
+		//bool airborne;
 
-		public Player()
+		public Player(Vector2 _position)
 		{
-			velocity = new Vector2(0, 0);
-			position = new Vector2(400,200);
+			position = _position;
 			LoadAnimation("MarioWalk", "Walk", true, 0.1f, 1, 3);
 			LoadAnimation("MarioIdle", "Idle", true, 0.1f, 1, 1);
 			PlayAnimation("Idle");
@@ -47,7 +46,7 @@ namespace GPA_Mario_Remake.Gameplay.Objects
 
 		public override void Update(GameTime gameTime)
 		{
-
+			
 			base.Update(gameTime);
 		}
 	}

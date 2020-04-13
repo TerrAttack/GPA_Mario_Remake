@@ -1,6 +1,7 @@
 ﻿using System;
 using GPA_Mario_Remake.Source.Helpers;
 using GPA_Mario_Remake.Source.Managers;
+using GPA_Mario_Remake.Source.Objects;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -15,6 +16,7 @@ namespace GPA_Mario_Remake.Source
         protected Matrix spriteScale;
         protected Point windowSize;
 
+        protected static Camera camera;
         protected static Point screen;
         protected static GameStateManager gameStateManager;
         protected static Random random;
@@ -28,6 +30,7 @@ namespace GPA_Mario_Remake.Source
             inputHelper = new InputHelper();
             gameStateManager = new GameStateManager();
             spriteScale = Matrix.CreateScale(1, 1, 1);
+            camera = new Camera();
             random = new Random();
             assetManager = new AssetManager(Content);
             gameSettingsManager = new GameSettingsManager();
@@ -42,6 +45,12 @@ namespace GPA_Mario_Remake.Source
         public static Random Random
         {
             get { return random; }
+        }
+
+        public static Camera Camera
+        {
+            get { return camera; }
+            set { camera = value; }
         }
 
         public static AssetManager AssetManager
@@ -136,7 +145,7 @@ namespace GPA_Mario_Remake.Source
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
-            spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null, spriteScale);
+            spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null, camera.Transform);
             gameStateManager.Draw(gameTime, spriteBatch);
             spriteBatch.End();
         }

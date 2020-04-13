@@ -58,6 +58,7 @@
     <Compile Include="Source\Objects\Basic\GameObject.cs" />
     <Compile Include="Source\Objects\Basic\GameObjectGrid.cs" />
     <Compile Include="Source\Objects\Basic\GameObjectList.cs" />
+    <Compile Include="Source\Objects\Camera.cs" />
     <Compile Include="Source\Objects\IGameLoopObject.cs" />
     <Compile Include="Source\Objects\Sprite\Animation\AnimatedGameObject.cs" />
     <Compile Include="Source\Objects\Sprite\Animation\Animation.cs" />

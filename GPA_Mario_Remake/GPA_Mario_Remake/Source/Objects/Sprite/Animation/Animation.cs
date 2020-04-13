@@ -9,10 +9,12 @@ namespace GPA_Mario_Remake.Source.Objects.Sprite.Animation
         protected bool isLooping;
         protected float time;
 
-        public Animation(string assetname, bool isLooping, float frameTime = 0.1f) : base(assetname)
+        public Animation(string assetname, bool isLooping, float frameTime = 0.1f, int rows = 1, int cols = 1) : base(assetname)
         {
             this.frameTime = frameTime;
             this.isLooping = isLooping;
+            sheetColumns = cols;
+            sheetRows = rows;
         }
 
         public void Play()

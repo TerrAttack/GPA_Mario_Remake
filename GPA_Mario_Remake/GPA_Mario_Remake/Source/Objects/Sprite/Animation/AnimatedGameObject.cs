@@ -14,9 +14,9 @@ namespace GPA_Mario_Remake.Source.Objects.Sprite.Animation
         }
 
         public void LoadAnimation(string assetName, string id, bool looping,
-                                  float frameTime = 0.1f)
+                                  float frameTime = 0.1f, int rows = 1, int cols = 1)
         {
-            Animation anim = new Animation(assetName, looping, frameTime);
+            Animation anim = new Animation(assetName, looping, frameTime, rows, cols);
             animations[id] = anim;
         }
 

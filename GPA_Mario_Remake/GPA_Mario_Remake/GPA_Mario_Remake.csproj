@@ -42,6 +42,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Gameplay\GameStates\PlayingState.cs" />
+    <Compile Include="Gameplay\Objects\Player.cs" />
+    <Compile Include="Gameplay\Objects\Tiles\BasicTile.cs" />
     <Compile Include="GPA_Mario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -49,6 +51,7 @@
     <Compile Include="Source\Helpers\CollisionHelper.cs" />
     <Compile Include="Source\Helpers\DrawingHelper.cs" />
     <Compile Include="Source\Helpers\InputHelper.cs" />
+    <Compile Include="Source\Helpers\LevelLoaderHelper.cs" />
     <Compile Include="Source\Managers\AssetManager.cs" />
     <Compile Include="Source\Managers\GameSettingsManager.cs" />
     <Compile Include="Source\Managers\GameStateManager.cs" />

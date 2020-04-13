@@ -10,7 +10,7 @@ namespace GPA_Mario_Remake
 		protected override void LoadContent()
 		{
 			base.LoadContent();
-			screen = new Point(800, 600);
+			screen = new Point(832, 640);
 			ApplyResolutionSettings();
 
 			gameStateManager.AddGameState("Playing State", new PlayingState());

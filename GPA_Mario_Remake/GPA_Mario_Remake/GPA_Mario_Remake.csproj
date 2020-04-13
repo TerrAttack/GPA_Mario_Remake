@@ -41,9 +41,27 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Game1.cs" />
+    <Compile Include="Gameplay\GameStates\PlayingState.cs" />
+    <Compile Include="GPA_Mario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\GameEnvironment.cs" />
+    <Compile Include="Source\Helpers\CollisionHelper.cs" />
+    <Compile Include="Source\Helpers\DrawingHelper.cs" />
+    <Compile Include="Source\Helpers\InputHelper.cs" />
+    <Compile Include="Source\Managers\AssetManager.cs" />
+    <Compile Include="Source\Managers\GameSettingsManager.cs" />
+    <Compile Include="Source\Managers\GameStateManager.cs" />
+    <Compile Include="Source\Objects\Basic\GameObject.cs" />
+    <Compile Include="Source\Objects\Basic\GameObjectGrid.cs" />
+    <Compile Include="Source\Objects\Basic\GameObjectList.cs" />
+    <Compile Include="Source\Objects\IGameLoopObject.cs" />
+    <Compile Include="Source\Objects\Sprite\Animation\AnimatedGameObject.cs" />
+    <Compile Include="Source\Objects\Sprite\Animation\Animation.cs" />
+    <Compile Include="Source\Objects\Sprite\RotatingSpriteGameObject.cs" />
+    <Compile Include="Source\Objects\Sprite\SpriteGameObject.cs" />
+    <Compile Include="Source\Objects\Sprite\Animation\SpriteSheet.cs" />
+    <Compile Include="Source\Objects\Text\TextGameObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
@@ -59,6 +77,7 @@
     <MonoGameContentReference Include="Content\Content.mgcb" />
     <None Include="app.manifest" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

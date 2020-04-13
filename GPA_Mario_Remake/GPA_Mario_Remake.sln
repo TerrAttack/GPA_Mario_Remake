@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPA_Mario_Remake", "GPA_Mario_Remake\GPA_Mario_Remake.csproj", "{13781657-BA6F-4C83-A050-3BEDA7801147}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13781657-BA6F-4C83-A050-3BEDA7801147}.Debug|x86.ActiveCfg = Debug|x86
+		{13781657-BA6F-4C83-A050-3BEDA7801147}.Debug|x86.Build.0 = Debug|x86
+		{13781657-BA6F-4C83-A050-3BEDA7801147}.Release|x86.ActiveCfg = Release|x86
+		{13781657-BA6F-4C83-A050-3BEDA7801147}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2420F11-C255-4EEE-9DE6-63ADEEB249CF}
+	EndGlobalSection
+EndGlobal
